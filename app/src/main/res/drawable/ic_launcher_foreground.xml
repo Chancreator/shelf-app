@@ -1,55 +1,56 @@
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2D2419"/>
-      <stop offset="100%" stop-color="#1A1410"/>
-    </linearGradient>
-    <linearGradient id="wood" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#E8A855"/>
-      <stop offset="100%" stop-color="#C9812F"/>
-    </linearGradient>
-    <linearGradient id="woodShine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#F4C077"/>
-      <stop offset="100%" stop-color="#D9954A"/>
-    </linearGradient>
-  </defs>
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://android.com"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Small books on top shelf -->
+    <path
+        android:fillColor="#D75031"
+        android:pathData="M43,36h3v8h-3z" />
+    <path
+        android:fillColor="#328575"
+        android:pathData="M47,37h3v7h-3z" />
 
-  <!-- App icon background -->
-  <rect x="0" y="0" width="512" height="512" rx="108" fill="url(#bg)"/>
+    <!-- Small books on bottom shelf -->
+    <path
+        android:fillColor="#328575"
+        android:pathData="M55,59h3v8h-3z" />
+    <path
+        android:fillColor="#D75031"
+        android:pathData="M59,60h3v7h-3z" />
 
-  <!-- Subtle inner shadow ring for depth -->
-  <rect x="0" y="0" width="512" height="512" rx="108" fill="none" stroke="#000000" stroke-opacity="0.25" stroke-width="2"/>
+    <!-- The S-Shaped Wooden Bookshelf Layout -->
+    <!-- Top Horizontal Plank -->
+    <path
+        android:fillColor="#EAA756"
+        android:pathData="M29,23h50c2.2,0 4,1.8 4,4v3c0,2.2 -1.8,4 -4,4L29,34c-2.2,0 -4,-1.8 -4,-4v3c0,-2.2 1.8,-4 4,-4z" />
+    <!-- Left Vertical Support -->
+    <path
+        android:fillColor="#DF9844"
+        android:pathData="M25,32h6v14h-6z" />
+    <!-- Middle Horizontal Plank -->
+    <path
+        android:fillColor="#EAA756"
+        android:pathData="M29,44h50c2.2,0 4,1.8 4,4v3c0,2.2 -1.8,4 -4,4L29,55c-2.2,0 -4,-1.8 -4,-4v3c0,-2.2 1.8,-4 4,-4z" />
+    <!-- Right Vertical Support -->
+    <path
+        android:fillColor="#DF9844"
+        android:pathData="M73,53h6v14h-6z" />
+    <!-- Bottom Horizontal Plank -->
+    <path
+        android:fillColor="#EAA756"
+        android:pathData="M29,65h50c2.2,0 4,1.8 4,4v3c0,2.2 -1.8,4 -4,4L29,76c-2.2,0 -4,-1.8 -4,-4v3c0,-2.2 1.8,-4 4,-4z" />
 
-  <!-- The letter S built from 4 stacked "shelf" bars/planks -->
-  <!-- Top shelf plank (top of S) -->
-  <rect x="120" y="112" width="272" height="56" rx="14" fill="url(#woodShine)"/>
-  <rect x="120" y="112" width="272" height="14" rx="7" fill="#FBDBA0" opacity="0.6"/>
-  <!-- side pegs suggesting shelf brackets -->
-  <circle cx="146" cy="140" r="6" fill="#8A5A22"/>
-  <circle cx="366" cy="140" r="6" fill="#8A5A22"/>
+    <!-- Details: Structural Screw Rivets (Circles) -->
+    <!-- Top left & right rivets -->
+    <circle android:cx="29" android:cy="28.5" android:r="1.5" android:fillColor="#8C5C2E" />
+    <circle android:cx="79" android:cy="28.5" android:r="1.5" android:fillColor="#8C5C2E" />
+    <!-- Middle left rivet -->
+    <circle android:cx="29" android:cy="49.5" android:r="1.5" android:fillColor="#8C5C2E" />
+    <!-- Bottom left & right rivets -->
+    <circle android:cx="29" android:cy="70.5" android:r="1.5" android:fillColor="#8C5C2E" />
+    <circle android:cx="79" android:cy="70.5" android:r="1.5" android:fillColor="#8C5C2E" />
 
-  <!-- Upper-left vertical connector -->
-  <rect x="120" y="168" width="56" height="96" rx="14" fill="url(#wood)"/>
-
-  <!-- Middle shelf plank -->
-  <rect x="120" y="228" width="272" height="56" rx="14" fill="url(#woodShine)"/>
-  <rect x="120" y="228" width="272" height="14" rx="7" fill="#FBDBA0" opacity="0.6"/>
-  <circle cx="146" cy="256" r="6" fill="#8A5A22"/>
-  <circle cx="366" cy="256" r="6" fill="#8A5A22"/>
-
-  <!-- Lower-right vertical connector -->
-  <rect x="336" y="248" width="56" height="96" rx="14" fill="url(#wood)"/>
-
-  <!-- Bottom shelf plank -->
-  <rect x="120" y="344" width="272" height="56" rx="14" fill="url(#woodShine)"/>
-  <rect x="120" y="344" width="272" height="14" rx="7" fill="#FBDBA0" opacity="0.6"/>
-  <circle cx="146" cy="372" r="6" fill="#8A5A22"/>
-  <circle cx="366" cy="372" r="6" fill="#8A5A22"/>
-
-  <!-- small items resting on shelves to reinforce "shelf" concept -->
-  <rect x="200" y="184" width="14" height="44" rx="3" fill="#E4572E"/>
-  <rect x="222" y="192" width="14" height="36" rx="3" fill="#3E8E7E"/>
-  <rect x="270" y="300" width="14" height="44" rx="3" fill="#3E8E7E"/>
-  <rect x="292" y="308" width="14" height="36" rx="3" fill="#E4572E"/>
-
-</svg>
+</vector>
